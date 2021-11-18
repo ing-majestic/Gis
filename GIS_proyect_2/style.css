@@ -1,0 +1,128 @@
+/*Para poder hacer referencia a alguna:
+etiqueta ejmp. <header>   = header{}
+id = "container" usaremos = #container{}
+class = "elmento" usaremos = .elemento{}
+para cualquier otro elemento usaremos : *{}
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /*Configuramos las caracteristicas de la pagina: color, fuente,etc*/
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    /*Configuración del contenedor*/
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    /*width: 1100px;*/
+    margin: 0px auto;
+
+}
+
+header{
+    /*border: 2px solid rgb(9, 212, 70);*/
+    /*margin: 1px;*/
+    background-color: #252D33;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: #ccf0a3;
+    /*border-bottom: 3px dashed;*/
+}
+
+nav{
+    /*background-color: rgb(110, 168, 253);*/
+    height: 70px;
+    /*border-bottom: 1px solid black;*/
+}
+
+.dropdown{
+    background-color: #1e2429;
+    height: 50px;
+    border-top: 10 px;
+}
+
+.dropdown ul {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+section{
+    background-color: wheat;
+
+}
+
+.article{
+    color: white;
+    /*margin-top: 15 px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;*/
+}
+.article:first-child{
+    border: none;
+    /*padding-top: 10px;
+    border-top: 1px solid #eee;*/
+}
+.article h2{
+    font-size: 30px;
+    /*border-left: 20px;*/
+
+}
+/*Area central con contenido*/
+#content{
+    float: left;
+    /*width: calc(80% - 10px);*/
+    width: calc(80% );
+    min-height: 700px; /* esto se utiliza para tamaño minimo que debe tener de alto*/
+    height: 100%;
+    background: #252D33;
+    padding-left: 20px;
+    /*padding: 40px;*/
+}
+
+/*Barra lateral configuración */
+aside{
+    float: left;
+    /*width: calc(20% - 10px);*/
+    width: calc(20% );
+    min-height: 700px;
+    height: 100%;
+    background: #252D33;
+    padding-left: 20px;
+    /*padding: 20px;*/
+}
+
+
+footer{
+    background-color: #21303D;
+    color: whitesmoke;
+    text-align: center;
+    height: 40px;
+}
+
+form{
+    /*border: 2px solid rgb(85, 37, 10);*/
+    margin: none;
+}
+
